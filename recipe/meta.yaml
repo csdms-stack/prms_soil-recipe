@@ -1,7 +1,7 @@
 {% set name = "prms_soil" %}
-{% set version = "0.2" %}
-# {% set release = "beta" %}
+{% set version = "0.3" %}
 {% set build_number = "0" %}
+{% set development = true %}
 
 package:
   name: {{ name }}
@@ -9,12 +9,18 @@ package:
 
 source:
   git_url: https://github.com/nhm-usgs/bmi-prms6-soil
+{%- if development %}
+  git_rev: 5fc372aa10fe79589e3649f1b4bf37c272aac793
+{%- else %}
   git_rev: v{{ version }}
-  # git_rev: a683c53d238633b131ced79a58f673861f40500e
+{%- endif %}
 
 build:
+{%- if development %}
+  string: beta_{{ build_number }}
+{%- else %}
   number: {{ build_number }}
-  # string: {{ release }}_{{ build_number }}
+{%- endif %}
 
 requirements:
   build:
