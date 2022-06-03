@@ -1,6 +1,7 @@
 [![Anaconda-Server Badge](https://anaconda.org/csdms-stack/prms_soil/badges/version.svg)](https://anaconda.org/csdms-stack/prms_soil)
 [![Anaconda-Server Badge](https://anaconda.org/csdms-stack/prms_soil/badges/platforms.svg)](https://anaconda.org/csdms-stack/prms_soil)
 [![Anaconda-Server Badge](https://anaconda.org/csdms-stack/prms_soil/badges/downloads.svg)](https://anaconda.org/csdms-stack/prms_soil)
+[![Build](https://github.com/csdms-stack/prms_soil-recipe/actions/workflows/build.yml/badge.svg)](https://github.com/csdms-stack/prms_soil-recipe/actions/workflows/build.yml)
 
 # prms_soil-recipe
 
